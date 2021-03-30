@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Image, SafeAreaView, Button } from 'react-native';
 
-function Home(props) {
+const Home = () => {
     return (
         <SafeAreaView style={styles.container}>    
             <Image source={require("../assets/AppIcon.png")} />
@@ -39,6 +39,6 @@ const styles = StyleSheet.create({
         width: 200,
         height: 50
     },
-})
+});
 
 export default Home;
