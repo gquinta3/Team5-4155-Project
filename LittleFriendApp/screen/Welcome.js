@@ -1,9 +1,21 @@
-import React from 'react';
-import { Image, StyleSheet, View, Button, Text } from 'react-native';
+import React, { useRef } from 'react';
+import { Image, StyleSheet, View, Button, Text, TouchableOpacity} from 'react-native';
+import ActionSheet from 'react-native-actionsheet';
 
-function Welcome(props) {
+const Welcome = () => {
+
+    let actionSheet = useRef();
+    let optionArray = [
+        'Take Photo', 'Choose From Library', 'Cancel'
+    ];
+
+    const showActionSheet = () => {
+        actionSheet.current.show();
+    };
+
     return (
         <View style={styles.container}> 
+
             <Image 
                 resizeMode="contain"
                 style={styles.arrow} 
@@ -19,36 +31,60 @@ function Welcome(props) {
             <View>
                 <Text style={styles.welcome}>WELCOME</Text>
             </View> 
+
+    
             <Image 
+                style={styles.account}
                 resizeMode="contain"
-                style={styles.account} 
-                source={require("../assets/accountIcon.jpeg")} />   
-            <View>
+                source={require("../assets/accountIcon.jpeg")} />
+
+            <TouchableOpacity 
+                style={styles.button}
+                onPress={showActionSheet}    
+            >
+                <Text style={styles.buttonPress}>Upload Photo</Text>
+            </TouchableOpacity>
+
+                
+            <ActionSheet
+                ref={actionSheet}
+                title={'Upload Photo'}
+                options={optionArray}
+                cancelButtonIndex={2}
+                destructiveButtonIndex={1}
+                onPress={(index) => {
+                    alert(optionArray[index]);
+                }}
+            />
+            
+            <View style={styles.button1}>
                 <Button
-                    style={styles.button}
                     title="Ready to take quiz"
-                    color= "darkgrey"
+                    color= '#ffffff'
                     onPress={() => console.log("Button tapped")}
                 />
-                <View style={styles.space} />
+            </View>
+
+            <View style={styles.button2}>
                 <Button
-                    style={styles.button}
                     title="Pet Profile"
-                    color= "darkgrey"
+                    color= '#ffffff'
                     onPress={() => console.log("Button tapped")}
                 />
-                <View style={styles.space} />
+            </View>
+            
+            <View style={styles.button3}>
                 <Button
-                    style={styles.button}
                     title="Pet Library"
-                    color= "darkgrey"
+                    color= '#ffffff'
                     onPress={() => console.log("Button tapped")}
                 />
-                <View style={styles.space} />
+            </View>
+
+            <View style={styles.button4}>
                 <Button
-                    style={styles.button}
                     title="Pet Discussion"
-                    color= "darkgrey"
+                    color= '#ffffff'
                     onPress={() => console.log("Button tapped")}
                 />
             </View>
@@ -62,8 +98,7 @@ const styles = StyleSheet.create({
         width: "50%",
         height: "50%",
         position: "relative",
-        top: -20,
-        left: 8,
+        top: -100,
     },
 
     arrow: {
@@ -75,10 +110,53 @@ const styles = StyleSheet.create({
     },
 
     button: {
-        width: 100,
-        height: 100,
         position: "absolute",
-        top: 10
+        top: 370,
+        left: 130,
+        backgroundColor: '#ffffff',
+    },
+
+    button1: {
+        position: "absolute",
+        top: 500,
+        backgroundColor: '#4169e1',
+        width: 180,
+        height: 40,
+        borderRadius: 10,
+    },
+
+    button2: {
+        position: "absolute",
+        top: 550,
+        backgroundColor: '#4169e1',
+        width: 180,
+        height: 40,
+        borderRadius: 10,
+    },
+
+    button3: {
+        position: "absolute",
+        top: 600,
+        backgroundColor: '#4169e1',
+        width: 180,
+        height: 40,
+        borderRadius: 10,
+    },
+
+    button4: {
+        position: "absolute",
+        top: 650,
+        backgroundColor: '#4169e1',
+        width: 180,
+        height: 40,
+        borderRadius: 10,
+    },
+
+    buttonPress: {
+        fontSize: 20,
+        fontWeight: "bold",
+        color: '#000000',
+
     },
 
     container: {
@@ -104,16 +182,11 @@ const styles = StyleSheet.create({
         right: 20,
     },
 
-    space: {
-        width: 20,
-        height: 20
-    },
-
     welcome: {
         position: "absolute",
         fontSize: 40,
         fontWeight: "bold",
-        top: 10,
+        top: -60,
         left: -90
     }
 
