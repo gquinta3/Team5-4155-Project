@@ -24,7 +24,7 @@ function Quiz(props) {
                 <Text>PLACE</Text>
             </View>
 
-            <Image 
+            {/* <Image 
                 resizeMode="contain"
                 style={styles.icon} 
                 source={require('../assets/place.png')} />
@@ -47,10 +47,8 @@ function Quiz(props) {
             <Image 
                 resizeMode="contain"
                 style={styles.icon} 
-                source={require("../assets/knowledge.png")} />
-
+                source={require("../assets/knowledge.png")} /> */}
         </View>
-        
     );
 }
 
