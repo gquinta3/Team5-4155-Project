@@ -1,27 +1,34 @@
+import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import { StyleSheet, View, Image, SafeAreaView, Button } from 'react-native';
+import { StyleSheet, View, Image } from 'react-native';
+import { Button, Input, Text } from 'react-native-elements';
 
-const Home = () => {
+const Home = ({navigation}) => {
     return (
-        <SafeAreaView style={styles.container}>    
+        <View style={styles.container}>    
             <Image source={require("../assets/AppIcon.png")} />
+            
+            <View style={styles.space} />
 
             <View style={styles.button}>
                 <Button
-                    title="Sign up"
-                    color= "darkgrey"
-                    onPress={() => console.log("Button tapped")}
-                />
+                    title="Log In"
+                    color= '#ffffff'
+                    onPress={() => navigation.navigate('LogIn')}/>
             </View>
+
+            <View style={styles.space} />
             
             <View style={styles.button}>
                 <Button
-                    title="Log in"
-                    color= "darkgrey"
-                    onPress={() => console.log("Button tapped")}
-                />
+                    title="Sign Up"
+                    color= '#ffffff'
+                    onPress={() => navigation.navigate('SignUp')}/>
             </View>
-        </SafeAreaView>
+
+        </View>
+
+        
     );
 }
 
@@ -32,13 +39,19 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
     },
-    
+
     button: {
         textAlign:"center",
-        paddingVertical: 10,
         width: 200,
-        height: 50
+        height: 50,
+        borderRadius: 10
     },
+
+    space: {
+        width: 20,
+        height: 20
+    },
+
 });
 
 export default Home;

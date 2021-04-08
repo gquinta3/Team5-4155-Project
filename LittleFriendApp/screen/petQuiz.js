@@ -4,51 +4,29 @@ import { Image, StyleSheet, Text, TextInput, View, Button } from 'react-native';
 function Quiz(props) {
     return (
         <View style={styles.container}> 
-            <Image 
-                resizeMode="contain"
-                style={styles.arrow} 
-                source={require("../assets/backArrow.png")} />
-            <Image 
-                resizeMode="contain"
-                style={styles.icon} 
-                source={require("../assets/icon2.png")} />
-            <Image 
-                resizeMode="contain"
-                style={styles.logOut} 
-                source={require("../assets/logOut.png")} />
-            <View>
-                <Text style={styles.petquiz}>PET QUIZ</Text>
-            </View>
-
-            <View>
-                <Text>PLACE</Text>
-            </View>
-
-            {/* <Image 
-                resizeMode="contain"
-                style={styles.icon} 
-                source={require('../assets/place.png')} />
-
-            <Image 
-                resizeMode="contain"
-                style={styles.icon} 
-                source={require("../assets/Exercise.png")} />
-
-            <Image 
-                resizeMode="contain"
-                style={styles.icon} 
-                source={require("../assets/time.png")} />
-
-            <Image 
-                resizeMode="contain"
-                style={styles.icon} 
-                source={require("../assets/spend.png")} />
-
-            <Image 
-                resizeMode="contain"
-                style={styles.icon} 
-                source={require("../assets/knowledge.png")} /> */}
+        <Image 
+            resizeMode="contain"
+            style={styles.arrow} 
+            source={require("../assets/backArrow.png")} />
+        <Image 
+            resizeMode="contain"
+            style={styles.icon} 
+            source={require("../assets/icon2.png")} />
+        <Image 
+            resizeMode="contain"
+            style={styles.logOut} 
+            source={require("../assets/logOut.png")} />
+        <View>
+            <Text style={styles.petquiz}>PET QUIZ</Text>
         </View>
+
+        <View>
+            <Text>PLACE</Text>
+        </View>
+
+        
+    </View>
+        
     );
 }
 
@@ -83,6 +61,7 @@ const styles = StyleSheet.create({
         top: 40,
         left: 175
     },
+
 
     logOut: {
         width: "10%",
