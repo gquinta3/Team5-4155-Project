@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { Image, StyleSheet, View, Button, Text, TouchableOpacity} from 'react-native';
 import ActionSheet from 'react-native-actionsheet';
+import TabNavigator from './TabNavigator';
 
 const Welcome = () => {
 
@@ -15,11 +16,6 @@ const Welcome = () => {
 
     return (
         <View style={styles.container}> 
-
-            <Image 
-                resizeMode="contain"
-                style={styles.arrow} 
-                source={require("../assets/backArrow.png")} />
             <Image 
                 resizeMode="contain"
                 style={styles.icon} 
@@ -98,15 +94,7 @@ const styles = StyleSheet.create({
         width: "50%",
         height: "50%",
         position: "relative",
-        top: -100,
-    },
-
-    arrow: {
-        width: "10%",
-        height: "10%",
-        position: "absolute",
-        top: 40,
-        left: 20,
+        top: -150,
     },
 
     button: {
@@ -118,7 +106,7 @@ const styles = StyleSheet.create({
 
     button1: {
         position: "absolute",
-        top: 500,
+        top: 400,
         backgroundColor: '#4169e1',
         width: 180,
         height: 40,
@@ -127,7 +115,7 @@ const styles = StyleSheet.create({
 
     button2: {
         position: "absolute",
-        top: 550,
+        top: 450,
         backgroundColor: '#4169e1',
         width: 180,
         height: 40,
@@ -136,7 +124,7 @@ const styles = StyleSheet.create({
 
     button3: {
         position: "absolute",
-        top: 600,
+        top: 500,
         backgroundColor: '#4169e1',
         width: 180,
         height: 40,
@@ -145,7 +133,7 @@ const styles = StyleSheet.create({
 
     button4: {
         position: "absolute",
-        top: 650,
+        top: 550,
         backgroundColor: '#4169e1',
         width: 180,
         height: 40,
@@ -156,7 +144,8 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: "bold",
         color: '#000000',
-
+        position: "absolute",
+        top: -55,
     },
 
     container: {
@@ -170,7 +159,7 @@ const styles = StyleSheet.create({
         width: "10%",
         height: "10%",
         position: "absolute",
-        top: 40,
+        top: 1,
         left: 175
     },
 
@@ -178,7 +167,7 @@ const styles = StyleSheet.create({
         width: "10%",
         height: "10%",
         position: "absolute",
-        top: 40,
+        top: 1,
         right: 20,
     },
 
@@ -186,7 +175,7 @@ const styles = StyleSheet.create({
         position: "absolute",
         fontSize: 40,
         fontWeight: "bold",
-        top: -60,
+        top: -120,
         left: -90
     }
 
