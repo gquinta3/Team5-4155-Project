@@ -1,0 +1,118 @@
+{
+    "small": [
+        {
+            "id": "R2tXdn36e52WLk8lwzy9",
+            "grooming": "1/5",
+            "height": "11 - 12 inches",
+            "lifeSpan": "9 - 11 years",
+            "name": "French Bulldog",
+            "picLink": "https://cdn2.thedogapi.com/images/HyWNfxc47.jpg",
+            "shedType": "light shed",
+            "temperament": "Playful, Affectionate, Keen, Sociable, Lively, Alert, Easygoing, Patient, Athletic, Bright",
+            "trainingDifficulty": "2/5",
+            "weight": "16 - 28 pounds"
+        },
+        {
+            "id": "GgyYGAc2NV1mvr0Su8Ac",
+            "grooming": "3/5",
+            "height": "10 - 12 inches",
+            "lifeSpan": "12 - 14 years",
+            "name": "Pug",
+            "picLink": "https://cdn2.thedogapi.com/images/HyJvcl9N7.jpg",
+            "shedType": "heavy shed",
+            "temperament": "Docile, Clever, Charming, Stubborn, Sociable, Playful, Quiet, Attentive",
+            "trainingDifficulty": "2/5",
+            "weight": "14 - 18 pounds"
+        },
+        {
+            "id": "oPnoofzr2sHbSTdqswhU",
+            "grooming": "5/5",
+            "height": "8 - 11 inches",
+            "lifeSpan": "10 - 18 years",
+            "name": "Shih Tzu",
+            "picLink": "https://cdn2.thedogapi.com/images/BkrJjgcV7.jpg",
+            "shedType": "non-shedding",
+            "temperament": "Clever, Spunky, Outgoing, Friendly, Affectionate, Lively, Alert, Loyal, Independent, Playful, Gentle, Intelligent, Happy, Active, Courageous",
+            "trainingDifficulty": "3/5",
+            "weight": "9 - 16 pounds"
+        }
+    ],
+
+    "medium": [
+        {
+            "id": "ELW1oQFod9u3FivC77cb",
+            "grooming": "3/5",
+            "height": "21 - 23 inches",
+            "lifeSpan": "10 - 13 years",
+            "name": "Airedale Terrier",
+            "picLink": "https://cdn2.thedogapi.com/images/1-7cgoZSh.jpg",
+            "shedType": "light shed",
+            "temperament": "Outgoing, Friendly, Alert, Confident, Intelligent, Courageous",
+            "trainingDifficulty": "1/5",
+            "weight": "40 - 65 pounds"
+        },
+        {
+            "id": "SyJqDNtUHsQFY9WZybVU",
+            "grooming": "3/5",
+            "height": "15 - 18 inches",
+            "lifeSpan": "10 - 12 years",
+            "name": "American Water Spaniel",
+            "picLink": "https://cdn2.thedogapi.com/images/SkmRJl9VQ.jpg",
+            "shedType": "light shed",
+            "temperament": "Friendly, Energetic, Obedient, Intelligent, Protective, Trainable",
+            "trainingDifficulty": "1/5",
+            "weight": "25 - 45 pounds"
+        },
+        {
+            "id": "o5wNyfsGQm4gn0wksm29",
+            "grooming": "1/5",
+            "height": "17 - 20 inches",
+            "lifeSpan": "12 - 14 years",
+            "name": "Australian Cattle Dog",
+            "picLink": "https://cdn2.thedogapi.com/images/IBkYVm4v1.jpg",
+            "shedType": "heavy shed",
+            "temperament": "Cautious, Energetic, Loyal, Obedient, Protective, Brave",
+            "trainingDifficulty": "4/5",
+            "weight": "44 - 62 pounds"
+        }
+    ],
+
+    "large": [
+        {
+            "id": "6Y7Rirjvi2vyNK1NMx4g",
+            "grooming": "3/5",
+            "height": "22 - 26 inches",
+            "lifeSpan": "10 - 13 years",
+            "name": "German Shepherd",
+            "picLink": "https://cdn2.thedogapi.com/images/SJyBfg5NX.jpg",
+            "shedType": "heavy shed",
+            "temperament": "Alert, Loyal, Obedient, Curious, Confident, Intelligent, Watchful, Courageous",
+            "trainingDifficulty": "1/5",
+            "weight": "50 - 90 pounds"
+        },
+        {
+            "id": "iwylyW1zUqDFUW9nyPuc",
+            "grooming": "3/5",
+            "height": "23 - 28 inches",
+            "lifeSpan": "10 - 12 years",
+            "name": "Giant Schnauzer",
+            "picLink": "https://cdn2.thedogapi.com/images/H1NIzlcV7.jpg",
+            "shedType": "heavy shed",
+            "temperament": "Strong Willed, Kind, Loyal, Intelligent, Dominant, Powerful",
+            "trainingDifficulty": "3/5",
+            "weight": "65 - 90 pounds"
+        },
+        {
+            "id": "b11ue24Jou08kpeoX09k",
+            "grooming": "2/5",
+            "height": "21 - 24 inches",
+            "lifeSpan": "10 - 12 years",
+            "name": "Golden Retriever",
+            "picLink": "https://cdn2.thedogapi.com/images/HJ7Pzg5EQ.jpg",
+            "shedType": "light-medium shed",
+            "temperament": "Intelligent, Kind, Reliable, Friendly, Trustworthy, Confident",
+            "trainingDifficulty": "1/5",
+            "weight": "55 - 75 pounds"
+        }
+    ]
+}

@@ -5,7 +5,6 @@ import LogIn from './LogIn';
 import SignUp from './SignUp';
 import Welcome from './Welcome';
 import petQuiz from './petQuiz';
-import Library from './Library';
 import Discussion from './Discussion';
 
 const Tab = createBottomTabNavigator();
@@ -18,7 +17,6 @@ const TabNavigator = () => {
             <Tab.Screen name='SignUp' component={SignUp} />
             <Tab.Screen name='Welcome' component={Welcome} />
             <Tab.Screen name='petQuiz' component={petQuiz} />
-            <Tab.Screen name='Library' component={Library} />
             <Tab.Screen name='Discussion' component={Discussion} />
         </Tab.Navigator>
     );
