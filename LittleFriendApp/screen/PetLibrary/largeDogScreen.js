@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     card: {
         flex: 1,
         alignItems: 'center',
-        backgroundColor: '#99ff99',
+        backgroundColor: 'darkcyan',
         alignSelf: 'stretch',
         margin: 20,
         padding: 20,
@@ -58,11 +58,11 @@ const styles = StyleSheet.create({
     statCategory: {
         alignSelf: 'flex-start',
         paddingHorizontal: 20,
-        color: 'green',
+        color: 'lightsteelblue',
         fontSize: 15
     },
     stats: {
         fontWeight: 'bold',
-        color: 'seagreen',
+        color: 'darkslategray',
     }
 })
