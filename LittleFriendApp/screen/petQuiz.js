@@ -17,15 +17,15 @@ const survey = [
         options: [
             {
                 optionText: 'Small',
-                value: 'small'
+                value: '1'
             },
             {
                 optionText: 'Medium',
-                value: 'medium'
+                value: '2'
             },
             {
                 optionText: 'Large',
-                value: 'large'
+                value: '3'
             }
         ]
     },
@@ -37,15 +37,15 @@ const survey = [
         options: [
             {
                 optionText: 'I don’t have a secure outdoor space',
-                value: 'no outdoor'
+                value: '1'
             },
             {
                 optionText: 'Small or Medium securec outdoor space',
-                value: 'small or medium'
+                value: '2'
             },
             {
                 optionText: 'Large secured outdoor space',
-                value: 'large'
+                value: '3'
             }
         ]
     },
