@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
         width: "50%",
         height: "50%",
         position: "relative",
-        top: -150,
+        top: -120,
     },
 
     button: {
@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
         position: "absolute",
         fontSize: 40,
         fontWeight: "bold",
-        top: -120,
+        top: -100,
         left: -90
     }
 

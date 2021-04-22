@@ -11,7 +11,7 @@ const SignUp = ({ navigation }) => {
     const signUp = async () => {
         try {
             const response = await firebase.auth().createUserWithEmailAndPassword(email, password);
-            navigation.navigate('Welcome')
+            navigation.navigate('LittleFriend')
         } catch (err){
             setError(err.message);
         }  
