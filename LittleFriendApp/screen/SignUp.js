@@ -1,16 +1,20 @@
 import React, { useState } from 'react';
 import { Image, StyleSheet, TextInput, View, TouchableOpacity } from 'react-native';
 import { Button, Input, Text } from 'react-native-elements';
-import firebase from '../firebase/firebase';
+import firebase, { createUserDocument } from '../firebase/firebase';
 
 const SignUp = ({ navigation }) => {
+    
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [displayName, setName] = useState('');
     const [error, setError] = useState('');
 
     const signUp = async () => {
         try {
-            const response = await firebase.auth().createUserWithEmailAndPassword(email, password);
+            const { user } = await firebase.auth().createUserWithEmailAndPassword(email, password);
+            console.log(user);
+            await createUserDocument(user, {displayName});
             navigation.navigate('LittleFriend')
         } catch (err){
             setError(err.message);
@@ -25,6 +29,12 @@ const SignUp = ({ navigation }) => {
                 source={require("../assets/icon2.png")} />
 
             <View style={styles.infor}>
+                <Input
+                    label="Name                                                   "
+                    value={displayName}
+                    onChangeText={setName}
+                />
+
                 <Input
                     label="Email Address                                          "
                     value={email}
@@ -74,13 +84,13 @@ const styles = StyleSheet.create({
         width: "10%",
         height: "10%",
         position: "absolute",
-        top: 40,
+        top: -10,
         left: 175
     },
 
     infor: {
         position: "absolute",
-        top: 150,
+        top: 100,
         left: 50
     },
 });
