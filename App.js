@@ -20,6 +20,8 @@ import largeDogScreen from './LittleFriendApp/screen/PetLibrary/largeDogScreen';
 import surveyComplete from './LittleFriendApp/screen/surveyComplete';
 import LoadingScreen from './LittleFriendApp/screen/LoadingScreen';
 import Profile from './LittleFriendApp/screen/Profile';
+import topic1 from './LittleFriendApp/screen/topic1';
+import AddDiscussion from './LittleFriendApp/screen/AddDiscussion';
 
 
 const Stack = createStackNavigator();
@@ -29,10 +31,10 @@ const Welcome1 = ()  => (
   <Tab.Navigator>
     <Tab.Screen name='Welcome' component={Welcome} />
     <Tab.Screen name='petQuiz' component={petQuiz} />
-    <Tab.Screen name='Update' component={Update} />
+    <Tab.Screen name='Profile' component={Profile} />
     <Tab.Screen name='Pet Library' component={LibraryHome} />
     <Tab.Screen name='Discussion' component={Discussion} />
-    <Tab.Screen name='Profile' component={Profile} />
+    <Tab.Screen name='Update' component={Update} />
   </Tab.Navigator>
 );
     
@@ -53,6 +55,8 @@ const App = () => (
       <Stack.Screen name = "Medium Dogs" component={medDogScreen} />
       <Stack.Screen name = "Large Dogs" component={largeDogScreen} />
       <Stack.Screen name = "Discussion" component={Discussion} />
+      <Stack.Screen name = "topic1" component={topic1}/>
+      <Stack.Screen name = "AddDiscussion" component={AddDiscussion} />
     </Stack.Navigator>
   </NavigationContainer>
 );
