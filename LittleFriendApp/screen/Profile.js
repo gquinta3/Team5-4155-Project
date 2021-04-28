@@ -112,24 +112,30 @@ const styles = StyleSheet.create({
   text1: {
     fontSize: 20,
     left: -10,
-    top: -90
+    top: -90,
+    backgroundColor: '#add8e6',
+    padding: 10
 },
 
   text2: {
     fontSize: 20,
     left: -10,
-    top: -70
+    top: -70,
+    backgroundColor: '#add8e6',
+    padding: 10
 },
 
   text3: {
     fontSize: 20,
     left: -10,
-    top: -50
+    top: -50,
+    backgroundColor: '#ffb6c1',
+    padding: 10
 },
   
   space: {
   width: 20,
-  height: 20
+  height: 8
 },
 
 });
