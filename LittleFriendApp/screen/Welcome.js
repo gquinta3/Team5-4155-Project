@@ -3,7 +3,7 @@ import { Image, StyleSheet, View, Button, Text, TouchableOpacity} from 'react-na
 import ActionSheet from 'react-native-actionsheet';
 import TabNavigator from './TabNavigator';
 
-const Welcome = () => {
+const Welcome = ({navigation}) => {
 
     let actionSheet = useRef();
     let optionArray = [
@@ -57,7 +57,7 @@ const Welcome = () => {
                 <Button
                     title="Ready to take quiz"
                     color= '#ffffff'
-                    onPress={() => console.log("Button tapped")}
+                    onPress={() => navigation.navigate('petQuiz')}
                 />
             </View>
 
@@ -65,7 +65,7 @@ const Welcome = () => {
                 <Button
                     title="Pet Profile"
                     color= '#ffffff'
-                    onPress={() => console.log("Button tapped")}
+                    onPress={() => navigation.navigate('Profile')}
                 />
             </View>
             
@@ -73,7 +73,7 @@ const Welcome = () => {
                 <Button
                     title="Pet Library"
                     color= '#ffffff'
-                    onPress={() => console.log("Button tapped")}
+                    onPress={() => navigation.navigate('Pet Library')}
                 />
             </View>
 
@@ -81,7 +81,7 @@ const Welcome = () => {
                 <Button
                     title="Pet Discussion"
                     color= '#ffffff'
-                    onPress={() => console.log("Button tapped")}
+                    onPress={() => navigation.navigate('Discussion')}
                 />
             </View>
         

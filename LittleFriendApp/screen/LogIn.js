@@ -28,13 +28,17 @@ const LogIn = ({ navigation }) => {
         <View style={styles.infor}>
             <Input   
                 label="Email Address                                          "
+                placeholder="Enter your email"
                 value={email}
                 onChangeText={setEmail}
+                autoCapitalize="none"
             />
             <Input
                 label="Password"
+                placeholder="Enter your password"
                 value={password}
                 onChangeText={setPassword}
+                autoCapitalize="none"
                 secureTextEntry
             />
             {

@@ -8,13 +8,14 @@ const SignUp = ({ navigation }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [displayName, setName] = useState('');
+    const [prefDog, setDog] = useState('');
     const [error, setError] = useState('');
 
     const signUp = async () => {
         try {
             const { user } = await firebase.auth().createUserWithEmailAndPassword(email, password);
             console.log(user);
-            await createUserDocument(user, {displayName});
+            await createUserDocument(user, {displayName}, {prefDog});
             navigation.navigate('LittleFriend')
         } catch (err){
             setError(err.message);
@@ -31,22 +32,34 @@ const SignUp = ({ navigation }) => {
             <View style={styles.infor}>
                 <Input
                     label="Name                                                   "
+                    placeholder="Enter your name"
                     value={displayName}
                     onChangeText={setName}
+                    autoCapitalize="none"
                 />
 
                 <Input
                     label="Email Address                                          "
+                    placeholder="Enter your email"
                     value={email}
                     onChangeText={setEmail}
+                    autoCapitalize="none"
                 />
 
                 <Input
                     label="Password"
+                    placeholder="Enter your password"
                     value={password}
                     onChangeText={setPassword}
+                    autoCapitalize="none"
                     secureTextEntry
                 />
+
+                <Input 
+                    value={prefDog}
+                    onChangeText={setDog}
+                />
+                  
                 
                 {
                     error ?
