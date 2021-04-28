@@ -20,7 +20,9 @@ export default firebase;
 
 export const firestore = firebase.firestore();
 
-export const createUserDocument = async (user, additionalData) => {
+export const PetRef = firestore.collection("users");
+
+export const createUserDocument = async (user, additionalData, dogData) => {
   if (!user) return;
 
   const userRef = firestore.doc(`users/${user.uid}`);
@@ -30,13 +32,16 @@ export const createUserDocument = async (user, additionalData) => {
   if(!snapshot.exists) {
     const {email} = user;
     const {displayName} = additionalData;
+    const {prefDog} = dogData;
+
   
   try {
     userRef.set({
       displayName,
       email,
+      prefDog,
       userId : user.uid,
-      createdAt: new Date()
+      createdAt: new Date(),
     });
       
   } catch (error) {
@@ -45,4 +50,25 @@ export const createUserDocument = async (user, additionalData) => {
   }
 };
 
+/*
+export async function getProfile(profileRetreived) {
+  var users = [];
+    
+  var snapshot = await PetRef.get()
+      
+      snapshot.forEach((doc) => {
+        const dogDoc = doc.data()
+        dogDoc.id = doc.id
+        users.push(dogDoc);
+      });
 
+  profileRetreived(users);
+  
+};
+
+export async function addDog(dog, addComplete) {
+  PetRef.doc(dog.id).set(dog).then(() => addComplete(dog)
+  ).catch((error) =>  console.log(error))
+  
+};
+*/
