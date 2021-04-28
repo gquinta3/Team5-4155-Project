@@ -10,6 +10,7 @@ import Home from './LittleFriendApp/screen/Home';
 import Welcome from './LittleFriendApp/screen/Welcome';
 import petQuiz from './LittleFriendApp/screen/petQuiz';
 import Discussion from './LittleFriendApp/screen/Discussion';
+import Update from './LittleFriendApp/screen/Update';
 import { NavigationContainer } from "@react-navigation/native";
 import LibraryHome from './LittleFriendApp/screen/PetLibrary/LibraryHome';
 import dogSizes from './LittleFriendApp/screen/PetLibrary/dogSizes';
@@ -17,6 +18,8 @@ import smallDogScreen from './LittleFriendApp/screen/PetLibrary/smallDogScreen';
 import medDogScreen from './LittleFriendApp/screen/PetLibrary/medDogScreen';
 import largeDogScreen from './LittleFriendApp/screen/PetLibrary/largeDogScreen';
 import surveyComplete from './LittleFriendApp/screen/surveyComplete';
+import LoadingScreen from './LittleFriendApp/screen/LoadingScreen';
+import Profile from './LittleFriendApp/screen/Profile';
 
 
 const Stack = createStackNavigator();
@@ -26,24 +29,30 @@ const Welcome1 = ()  => (
   <Tab.Navigator>
     <Tab.Screen name='Welcome' component={Welcome} />
     <Tab.Screen name='petQuiz' component={petQuiz} />
+    <Tab.Screen name='Update' component={Update} />
     <Tab.Screen name='Pet Library' component={LibraryHome} />
     <Tab.Screen name='Discussion' component={Discussion} />
+    <Tab.Screen name='Profile' component={Profile} />
   </Tab.Navigator>
 );
     
 const App = () => (
   <NavigationContainer>
     <Stack.Navigator initialRouteName="Home">
+      <Stack.Screen name={'Loading'} component={LoadingScreen} />
       <Stack.Screen name = "Home" component={Home} />
       <Stack.Screen name = "SignUp" component={SignUp} />
       <Stack.Screen name = "LogIn" component={LogIn} />
       <Stack.Screen name = "LittleFriend" component={Welcome1} />
       <Stack.Screen name = "petQuiz" component={petQuiz} />
-      <Stack.Screen name = "surveyComplete" component={surveyComplete} />
+      <Stack.Screen name = "Update" component={Update} />
+      <Stack.Screen name = "Profile" component={Profile} />
+      <Stack.Screen name = "Pet Library" component={LibraryHome} />
       <Stack.Screen name = "Dog Sizes" component={dogSizes} />
       <Stack.Screen name = "Small Dogs" component={smallDogScreen} />
       <Stack.Screen name = "Medium Dogs" component={medDogScreen} />
       <Stack.Screen name = "Large Dogs" component={largeDogScreen} />
+      <Stack.Screen name = "Discussion" component={Discussion} />
     </Stack.Navigator>
   </NavigationContainer>
 );
