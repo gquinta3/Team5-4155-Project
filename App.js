@@ -22,6 +22,9 @@ import LoadingScreen from './LittleFriendApp/screen/LoadingScreen';
 import Profile from './LittleFriendApp/screen/Profile';
 import topic1 from './LittleFriendApp/screen/topic1';
 import AddDiscussion from './LittleFriendApp/screen/AddDiscussion';
+import compatible from './LittleFriendApp/screen/compatible';
+import nonCompatible from './LittleFriendApp/screen/nonCompatible';
+import viewDog from './LittleFriendApp/screen/viewDog';
 
 
 const Stack = createStackNavigator();
@@ -47,8 +50,12 @@ const App = () => (
       <Stack.Screen name = "LogIn" component={LogIn} />
       <Stack.Screen name = "LittleFriend" component={Welcome1} />
       <Stack.Screen name = "petQuiz" component={petQuiz} />
+      <Stack.Screen name = "surveyComplete" component={surveyComplete} />
+      <Stack.Screen name = "compatible" component={compatible} />
+      <Stack.Screen name = "nonCompatible" component={nonCompatible} />
       <Stack.Screen name = "Update" component={Update} />
       <Stack.Screen name = "Profile" component={Profile} />
+      <Stack.Screen name = "viewDog" component={viewDog} />
       <Stack.Screen name = "Pet Library" component={LibraryHome} />
       <Stack.Screen name = "Dog Sizes" component={dogSizes} />
       <Stack.Screen name = "Small Dogs" component={smallDogScreen} />
