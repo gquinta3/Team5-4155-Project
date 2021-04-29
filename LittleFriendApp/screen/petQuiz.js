@@ -315,10 +315,10 @@ export default class petQuiz extends Component {
                     
                 </View>
                 
-                <ScrollView style={styles.answersContainer}>
+                {/* <ScrollView style={styles.answersContainer}>
                     <Text style={{textAlign:'center'}}>JSON output</Text>
                     <Text>{this.state.answersSoFar}</Text>
-                </ScrollView>
+                </ScrollView> */}
                 
             </View>
         );
