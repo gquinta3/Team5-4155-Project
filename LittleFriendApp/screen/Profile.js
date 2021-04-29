@@ -29,6 +29,7 @@ class Profile extends React.Component {
 
   render() {
     const { users } = this.state;
+    const { navigate } = this.props.navigation;
 
     return (
       <View style={styles.container}>
@@ -42,10 +43,10 @@ class Profile extends React.Component {
         <Image 
                 style={styles.account}
                 resizeMode="contain"
-                source={require("../assets/accountIcon.jpeg")} />
+                source={require("../assets/accountIcon.jpeg")} />      
 
-        {users.map(user => (
-          <View key={user.uid}>
+        {users.map((user, uid) => (
+          <View key={uid}>
                   <Text style={styles.text1}>Name: {user.displayName}</Text>
                   <View style={styles.space} />
                   <Text style={styles.text2}>Email: {user.email}</Text>
@@ -60,7 +61,7 @@ class Profile extends React.Component {
             <Button
                 title="View Dog Details"
                 color= '#ffffff'
-                onPress={() => console.log("Button tapped")}
+                onPress={() => navigate('viewDog')}
             />
         </View>
       
@@ -112,24 +113,30 @@ const styles = StyleSheet.create({
   text1: {
     fontSize: 20,
     left: -10,
-    top: -90
+    top: -90,
+    backgroundColor: '#add8e6',
+    padding: 10
 },
 
   text2: {
     fontSize: 20,
     left: -10,
-    top: -70
+    top: -70,
+    backgroundColor: '#add8e6',
+    padding: 10
 },
 
   text3: {
     fontSize: 20,
     left: -10,
-    top: -50
+    top: -50,
+    backgroundColor: '#ffb6c1',
+    padding: 10
 },
   
   space: {
   width: 20,
-  height: 20
+  height: 8
 },
 
 });

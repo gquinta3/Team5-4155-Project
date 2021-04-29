@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { Image, StyleSheet, View, Button, Text, TouchableOpacity} from 'react-native';
 import ActionSheet from 'react-native-actionsheet';
 import TabNavigator from './TabNavigator';
+import {loggingOut} from '../firebase/firebase'
 
 const Welcome = ({navigation}) => {
 
@@ -14,16 +15,25 @@ const Welcome = ({navigation}) => {
         actionSheet.current.show();
     };
 
+    const handlePress = () => {
+        loggingOut();
+        navigation.replace('Home');
+      };
+
     return (
         <View style={styles.container}> 
             <Image 
                 resizeMode="contain"
                 style={styles.icon} 
                 source={require("../assets/icon2.png")} />
-            <Image 
-                resizeMode="contain"
-                style={styles.logOut} 
-                source={require("../assets/logOut.png")} />
+
+            <TouchableOpacity style={styles.logOut} onPress={handlePress}>      
+                <Image 
+                    resizeMode="contain"
+                    style={{width: 20, height: 20}}
+                    source={require("../assets/logOut.png")} />
+            </TouchableOpacity>
+
             <View>
                 <Text style={styles.welcome}>WELCOME</Text>
             </View> 

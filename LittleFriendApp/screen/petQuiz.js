@@ -304,7 +304,7 @@ export default class petQuiz extends Component {
                         navButtonContainerStyle={{ flexDirection: 'row', justifyContent: 'space-around' }}
                         renderPrevious={this.renderPreviousButton.bind(this)}
                         renderNext={this.renderNextButton.bind(this)}
-                        renderFinished={this.renderFinishedButton.bind(this)}
+                        renderFinished={this.renderFinishedButton.bind(this)}    
                         renderQuestionText={this.renderQuestionText}
                         onSurveyFinished={(answers) => this.onSurveyFinished(answers)}
                         onAnswerSubmitted={(answer) => this.onAnswerSubmitted(answer)}

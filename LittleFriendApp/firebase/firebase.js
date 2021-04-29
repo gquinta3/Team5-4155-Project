@@ -50,6 +50,14 @@ export const createUserDocument = async (user, additionalData, dogData) => {
   }
 };
 
+export async function loggingOut() {
+  try {
+    await firebase.auth().signOut();
+  } catch (err) {
+    Alert.alert('There is something wrong!', err.message);
+  }
+};
+
 /*
 export async function getProfile(profileRetreived) {
   var users = [];

@@ -1,6 +1,54 @@
 {
     "small": [
         {
+            "id": "985Thne36e6f8lwzy9",
+            "grooming": "3/5",
+            "height": "9 - 11.5 inches",
+            "lifeSpan": "10 - 12 years",
+            "name": "Affenpinscher",
+            "picLink": "https://cdn2.thedogapi.com/images/BJa4kxc4X.jpg",
+            "shedType": "medium shed",
+            "temperament": "Stubborn, Curious, Playful, Adventurous, Active, Fun-loving",
+            "trainingDifficulty": "2/5",
+            "weight": "6 - 13 pounds"
+        },
+        {
+            "id": "1Apflrks3Stmxlah4Ehtm",
+            "grooming": "2/5",
+            "height": "15 - 19 inches",
+            "lifeSpan": "12 - 15 years",
+            "name": "American Eskimo Dog",
+            "picLink": "https://cdn2.thedogapi.com/images/Bymjyec4m.jpg",
+            "shedType": "medium shed",
+            "temperament": "Friendly, Alert, Reserved, Intelligent, Protective",
+            "trainingDifficulty": "1/5",
+            "weight": "20 - 40 pounds"
+        },
+        {
+            "id": "1GDB8mnf63vnlsjf5al",
+            "grooming": "2/5",
+            "height": "10 - 11 inches",
+            "lifeSpan": "11 - 15 years",
+            "name": "Australian Terrier",
+            "picLink": "https://cdn2.thedogapi.com/images/r1Ylge5Vm.jpg",
+            "shedType": "light shed",
+            "temperament": "Spirited, Alert, Loyal, Companionable, Even Tempered, Courageous",
+            "trainingDifficulty": "3/5",
+            "weight": "14 - 16 pounds"
+        },
+        {
+            "id": "7Ydn5nd6JD3ndioq",
+            "grooming": "1/5",
+            "height": "16 - 17 inches",
+            "lifeSpan": "10 - 12 years",
+            "name": "Basenji",
+            "picLink": "https://cdn2.thedogapi.com/images/H1dGlxqNQ.jpg",
+            "shedType": "light shed",
+            "temperament": "Affectionate, Energetic, Alert, Curious, Playful, Intelligent",
+            "trainingDifficulty": "2/5",
+            "weight": "22 - 24 pounds"
+        },
+        {
             "id": "R2tXdn36e52WLk8lwzy9",
             "grooming": "1/5",
             "height": "11 - 12 inches",
@@ -19,7 +67,7 @@
             "lifeSpan": "12 - 14 years",
             "name": "Pug",
             "picLink": "https://cdn2.thedogapi.com/images/HyJvcl9N7.jpg",
-            "shedType": "heavy shed",
+            "shedType": "light shed",
             "temperament": "Docile, Clever, Charming, Stubborn, Sociable, Playful, Quiet, Attentive",
             "trainingDifficulty": "2/5",
             "weight": "14 - 18 pounds"
@@ -52,6 +100,30 @@
             "weight": "40 - 65 pounds"
         },
         {
+            "id": "1Aaofk4kjns5GFsiu4nf",
+            "grooming": "1/5",
+            "height": "21 - 28 inches",
+            "lifeSpan": "8 - 15 years",
+            "name": "American Foxhound",
+            "picLink": "https://cdn2.thedogapi.com/images/S14n1x9NQ.jpg",
+            "shedType": "medium shed",
+            "temperament": "Kind, Sweet-Tempered, Loyal, Independent, Intelligent, Loving",
+            "trainingDifficulty": "2/5",
+            "weight": "65 - 75 pounds"
+        },
+        {
+            "id": "6Anhwkn5Re56khKhesnk",
+            "grooming": "1/5",
+            "height": "17 - 19 inches",
+            "lifeSpan": "12 - 15 years",
+            "name": "American Staffordshire Terrier",
+            "picLink": "https://cdn2.thedogapi.com/images/rJIakgc4m.jpg",
+            "shedType": "medium shed",
+            "temperament": "Tenacious, Friendly, Devoted, Loyal, Attentive, Courageous",
+            "trainingDifficulty": "3/5",
+            "weight": "50 - 60 pounds"
+        },
+        {
             "id": "SyJqDNtUHsQFY9WZybVU",
             "grooming": "3/5",
             "height": "15 - 18 inches",
@@ -64,6 +136,18 @@
             "weight": "25 - 45 pounds"
         },
         {
+            "id": "Tyu763ef6f5Miyjs",
+            "grooming": "2/5",
+            "height": "20 - 22 inches",
+            "lifeSpan": "12 - 14 years",
+            "name": "Appenzeller Sennenhund",
+            "picLink": "https://cdn2.thedogapi.com/images/HkNkxlqEX.jpg",
+            "shedType": "heavy shed",
+            "temperament": "Reliable, Fearless, Energetic, Lively, Self-assured",
+            "trainingDifficulty": "4/5",
+            "weight": "48 - 55 pounds"
+        },
+        {
             "id": "o5wNyfsGQm4gn0wksm29",
             "grooming": "1/5",
             "height": "17 - 20 inches",
@@ -74,10 +158,70 @@
             "temperament": "Cautious, Energetic, Loyal, Obedient, Protective, Brave",
             "trainingDifficulty": "4/5",
             "weight": "44 - 62 pounds"
+        },
+        {
+            "id": "dkfa73Y6t5geIegosu",
+            "grooming": "2/5",
+            "height": "17 - 20 inches",
+            "lifeSpan": "10 - 13 years",
+            "name": "Australian Kelpie",
+            "picLink": "https://cdn2.thedogapi.com/images/Hyq1ge9VQ.jpg",
+            "shedType": "heavy shed",
+            "temperament": "Friendly, Energetic, Alert, Loyal, Intelligent, Eager",
+            "trainingDifficulty": "1/5",
+            "weight": "31 - 46 pounds"
         }
     ],
 
     "large": [
+        {
+            "id": "5T6Eirdurnhs57otkEkS",
+            "grooming": "4/5",
+            "height": "25 - 27 inches",
+            "lifeSpan": "10 - 13 years",
+            "name": "Afghan Hound",
+            "picLink": "https://cdn2.thedogapi.com/images/hMyT4CDXR.jpg",
+            "shedType": "light shed",
+            "temperament": "Aloof, Clownish, Dignified, Independent, Happy",
+            "trainingDifficulty": "4/5",
+            "weight": "50 - 60 pounds"
+        },
+        {
+            "id": "SorkSl239fDmfDuo6emf",
+            "grooming": "4/5",
+            "height": "24 - 28 inches",
+            "lifeSpan": "10 - 14 years",
+            "name": "Akita",
+            "picLink": "https://cdn2.thedogapi.com/images/BFRYBufpm.jpg",
+            "shedType": "medium shed",
+            "temperament": "Docile, Alert, Responsive, Dignified, Composed, Friendly, Receptive, Faithful, Courageous",
+            "trainingDifficulty": "1/5",
+            "weight": "65 - 115 pounds"
+        },
+        {
+            "id": "6Gksmfdp7Ejdl5sms7rhrl",
+            "grooming": "3/5",
+            "height": "23 - 25 inches",
+            "lifeSpan": "12 - 15 years",
+            "name": "Alaskan Malamute",
+            "picLink": "https://cdn2.thedogapi.com/images/dW5UucTIW.jpg",
+            "shedType": "medium shed",
+            "temperament": "Friendly, Affectionate, Devoted, Loyal, Dignified, Playful",
+            "trainingDifficulty": "4/5",
+            "weight": "65 - 100 pounds"
+        },
+        {
+            "id": "2qhrh5dj2Gksms1Wy",
+            "grooming": "1/5",
+            "height": "22 - 27 inches",
+            "lifeSpan": "10 - 12 years",
+            "name": "American Bulldog",
+            "picLink": "https://cdn2.thedogapi.com/images/pk1AAdloG.jpg",
+            "shedType": "medium shed",
+            "temperament": "Friendly, Assertive, Energetic, Loyal, Gentle, Confident, Dominant",
+            "trainingDifficulty": "3/5",
+            "weight": "65 - 120 pounds"
+        },
         {
             "id": "6Y7Rirjvi2vyNK1NMx4g",
             "grooming": "3/5",
