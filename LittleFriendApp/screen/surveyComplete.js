@@ -1,38 +1,42 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { Text, SafeAreaView, StyleSheet, View, Image, ScrollView } from 'react-native';
 import { Button } from 'react-native-elements';
+import { parse } from 'react-native-redash';
 import DogDatabase from '../screen/PetLibrary/DogDB/DogDatabase.json';
 
+class surveyComplete extends React.Component{
+    constructor(props) {
+        super(props)
+        this.state = {
+            dogSize: '0', place1: '0', place2: '0', exercise: '0', time: '0', spend: '0'
+        }
+    }
 
-const surveyComplete = ({navigation}) =>  {
-    return(
-        <SafeAreaView style={styles.container}>
-            <ScrollView>
-                <Text style={styles.title1}>BEST COMPATIBLE DOG</Text>
-                <View style={styles.dog1}>
-                    <Button
-                        title="Pug"
-                        color= '#ffffff'
-                        onPress={() => navigation.navigate('compatible')}/>
-                </View>
-                <Image source={{uri: 'https://cdn2.thedogapi.com/images/HyJvcl9N7.jpg'}}
-                        style={{width: 250, height: 250}} />
+    
+    render () {
+        
+        const {surveyAnswers} = this.props.route.params;
+        
+        return(
+            <SafeAreaView style={styles.container}>
+                <ScrollView>
+                    <Text style={styles.title1}>BEST COMPATIBLE DOG</Text>
 
-                <Text style={styles.title2}>NOT COMPATIBLE DOG</Text>
-                <View style={styles.dog2}>
-                    <Button
-                        title="German Shepherd"
-                        color= '#ffffff'
-                        onPress={() => navigation.navigate('nonCompatible')}/>
-                </View>
-                <Image source={{uri: 'https://cdn2.thedogapi.com/images/SJyBfg5NX.jpg'}}
-                        style={{width: 250, height: 250}} />
-            </ScrollView>
-        </SafeAreaView>
-    )
+                    <Text>{surveyAnswers.dogSize.value}</Text>
+                    <Text>{surveyAnswers.place1.value}</Text>
+                    <Text>{surveyAnswers.place2.value}</Text>
+                    <Text>{surveyAnswers.exercise.value}</Text>
+                    <Text>{surveyAnswers.time.value}</Text>
+                    <Text>{surveyAnswers.spend.value}</Text>
+                                    
+                </ScrollView>
+            </SafeAreaView>
+        );
+    }
 }
 
+    
 const styles = StyleSheet.create({
     container: {
         flex: 1,
