@@ -57,11 +57,11 @@ const survey = [
         options: [
             {
                 optionText: 'My home is not secure nor safe',
-                value: 'no secure'
+                value: '1'
             },
             {
                 optionText: 'My home is secure and safe',
-                value: 'secure'
+                value: '2'
             }
         ]
     },
@@ -73,15 +73,15 @@ const survey = [
         options: [
             {
                 optionText: 'Not very activeI don’t have a secure outdoor space',
-                value: 'not active'
+                value: '1'
             },
             {
                 optionText: 'Spend some time outside and stay active',
-                value: 'active'
+                value: '2'
             },
             {
                 optionText: 'I love the outdoors and I love to stay active',
-                value: 'very active'
+                value: '3'
             }
         ]
     },
@@ -93,15 +93,15 @@ const survey = [
         options: [
             {
                 optionText: 'Very busy and have a little amount of free time',
-                value: 'busy'
+                value: '1'
             },
             {
                 optionText: 'Before and afterwork I have free time',
-                value: 'some free time'
+                value: '2'
             },
             {
                 optionText: 'Not busy and have a lot of free time',
-                value: 'a lot of free time'
+                value: '3'
             }
         ]
     },
@@ -113,22 +113,22 @@ const survey = [
         options: [
             {
                 optionText: 'Less than $100 per month',
-                value: 'less than $100/month'
+                value: '1'
             },
             {
                 optionText: 'Between $100-200 per month',
-                value: '$100-200/month'
+                value: '2'
             },
             {
                 optionText: 'More than $200 per month',
-                value: 'more than $200/month'
+                value: '3'
             }
         ]
     },
 
     {
         questionType: 'Info',
-        questionText: 'That is all for the demo, tap finish to see your results!'
+        questionText: 'That is all for the survey, tap finish to see your results!'
     },
 ];
 
@@ -315,10 +315,7 @@ export default class petQuiz extends Component {
                     
                 </View>
                 
-                <ScrollView style={styles.answersContainer}>
-                    <Text style={{textAlign:'center'}}>JSON output</Text>
-                    <Text>{this.state.answersSoFar}</Text>
-                </ScrollView>
+             
                 
             </View>
         );
