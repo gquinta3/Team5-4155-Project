@@ -315,14 +315,7 @@ export default class petQuiz extends Component {
                     
                 </View>
                 
-<<<<<<< HEAD
-                {/* <ScrollView style={styles.answersContainer}>
-                    <Text style={{textAlign:'center'}}>JSON output</Text>
-                    <Text>{this.state.answersSoFar}</Text>
-                </ScrollView> */}
-=======
              
->>>>>>> 324a8707550bdba7ebf3f868ddfc72f012e00e51
                 
             </View>
         );
