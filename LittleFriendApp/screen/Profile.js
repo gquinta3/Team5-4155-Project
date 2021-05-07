@@ -59,9 +59,9 @@ class Profile extends React.Component {
 
         <View style={styles.button}>
             <Button
-                title="View Dog Details"
+                title="View Dog Library for Details"
                 color= '#ffffff'
-                onPress={() => navigate('viewDog')}
+                onPress={() => navigate('Pet Library')}
             />
         </View>
       

@@ -16,13 +16,19 @@ class surveyComplete extends React.Component{
     render () {
         
         const {surveyAnswers} = this.props.route.params;
-        
+        const { navigate } = this.props.navigation;
         
         return(
             <SafeAreaView style={styles.container}>
                 <ScrollView>
                     <Text style={styles.title1}>BEST COMPATIBLE DOG</Text>
                     <Text style={styles.dog1}> {this.result1()}</Text>
+
+                    < Button 
+                        title="Update Dog Preference"
+                        color= '#ffffff'
+                        onPress={() => navigate('Update')}
+                    />
                     
                     <Text style={styles.title2}>NOT COMPATIBLE DOG</Text>
                     <Text style={styles.dog2}> {this.result2()}</Text>
@@ -38,13 +44,13 @@ class surveyComplete extends React.Component{
             return <View>
                         <Text style={styles.dog1}>Affenpinscher</Text>
                         <Image source={{uri: 'https://cdn2.thedogapi.com/images/BJa4kxc4X.jpg'}}
-                        style={{width: 250, height: 250}} />
+                        style={{width: 200, height: 200}} />
                     </View>;
         } if ((surveyAnswers.dogSize.value  + surveyAnswers.place1.value  + surveyAnswers.spend.value == "113") || (surveyAnswers.dogSize.value  + surveyAnswers.place1.value  + surveyAnswers.spend.value == "121")) {
             return <View>
                         <Text style={styles.dog1}>American Eskimo Dog</Text>
                         <Image source={{uri: 'https://cdn2.thedogapi.com/images/Bymjyec4m.jpg'}}
-                        style={{width: 250, height: 250}} />
+                        style={{width: 200, height: 200}} />
                     </View>;
         } if (surveyAnswers.dogSize.value  + surveyAnswers.place1.value  + surveyAnswers.spend.value == "122") {
             return <View>
@@ -208,7 +214,7 @@ const styles = StyleSheet.create({
     dog1: {
         fontSize: 20,
         fontWeight: 'bold',
-        padding: 10,
+        padding: 5,
         textAlign: "center",
         backgroundColor: "#228b22"
     },
@@ -216,22 +222,22 @@ const styles = StyleSheet.create({
     dog2: {
         fontSize: 20,
         fontWeight: 'bold',
-        padding: 10,
+        padding: 5,
         textAlign: "center",
         backgroundColor: "#ff4500"
     },
 
     title1: {
-        fontSize: 20,
+        fontSize: 17,
         fontWeight: 'bold',
-        padding: 10,
+        padding: 8,
         textAlign: "center"
     },
 
     title2: {
-        fontSize: 20,
+        fontSize: 17,
         fontWeight: 'bold',
-        padding: 10,
+        padding: 8,
         textAlign: "center"
     },
 })
