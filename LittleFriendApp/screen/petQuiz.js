@@ -40,7 +40,7 @@ const survey = [
                 value: '1'
             },
             {
-                optionText: 'Small or Medium securec outdoor space',
+                optionText: 'Small or Medium secure outdoor space',
                 value: '2'
             },
             {
@@ -52,16 +52,24 @@ const survey = [
     {
         questionType: 'SelectionGroup',
         questionText:
-            'Is your home a secure, and comfort place for a dog?',
+            'How would you describe your weather climate?',
         questionId: 'place2',
         options: [
             {
-                optionText: 'My home is not secure nor safe',
+                optionText: 'Tropical',
                 value: '1'
             },
             {
-                optionText: 'My home is secure and safe',
+                optionText: 'Desert',
                 value: '2'
+            },
+            {
+                optionText: 'Temperate',
+                value: '3'
+            },
+            {
+                optionText: 'Polar',
+                value: '4'
             }
         ]
     },
@@ -72,11 +80,11 @@ const survey = [
         questionId: 'exercise',
         options: [
             {
-                optionText: 'Not very activeI don’t have a secure outdoor space',
+                optionText: 'I am not very active',
                 value: '1'
             },
             {
-                optionText: 'Spend some time outside and stay active',
+                optionText: 'I spend some time outside and stay active',
                 value: '2'
             },
             {
@@ -92,15 +100,15 @@ const survey = [
         questionId: 'time',
         options: [
             {
-                optionText: 'Very busy and have a little amount of free time',
+                optionText: 'I am very busy and have a little amount of free time',
                 value: '1'
             },
             {
-                optionText: 'Before and afterwork I have free time',
+                optionText: 'I have free time before and after work',
                 value: '2'
             },
             {
-                optionText: 'Not busy and have a lot of free time',
+                optionText: 'I am not busy and I have a lot of free time',
                 value: '3'
             }
         ]
@@ -108,7 +116,7 @@ const survey = [
     {
         questionType: 'SelectionGroup',
         questionText:
-            'How much are willing to spend on your new dog on a monthly basis?',
+            'What is your spending budget for your new dog?',
         questionId: 'spend',
         options: [
             {
