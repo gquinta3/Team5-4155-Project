@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { Text, SafeAreaView, StyleSheet, View, Image, ScrollView } from 'react-native';
 import { Button } from 'react-native-elements';
 import DogDatabase from '../screen/PetLibrary/DogDB/DogDatabase.json';
-
+import Update from './Update';
 
 const viewDog = () =>  {
     return(
@@ -22,8 +22,6 @@ const viewDog = () =>  {
                             <Text> Weight: 14-18 inches</Text>{'\n'}
                             <Text> Temperament: Docile, Clever, Charming, Stubborn, Sociable, Playful, Quiet, Attentive</Text>
                 </Text>
-
-
             </ScrollView>
         </SafeAreaView>
     )

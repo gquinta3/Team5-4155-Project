@@ -8,6 +8,8 @@ import { PetRef } from "../firebase/firebase";
 import { Alert } from 'react-native';
 import {addDog} from '../firebase/firebase';
 
+let passedValue; // declare variable
+
 const Update = ({ navigation }) => {
     
     const [email, setEmail] = useState('');
@@ -37,8 +39,9 @@ const Update = ({ navigation }) => {
       .then(() => {
         console.log('Updated!');
         Alert.alert('Sucessfully Updated!');
-      })
-
+        passedValue = userData; // assign the userData object to 'passedValue'
+        console.log(passedValue.prefDog); //this was just to test variable
+      });
     }
 
     useEffect(() =>  {
@@ -59,8 +62,7 @@ const Update = ({ navigation }) => {
                     value={userData ? userData.prefDog: ''}
                     onChangeText={(txt) => setUserData({...userData, prefDog: txt})}
                 />
-                  
-                
+
                 {
                     error ?
                     <Text style={{ color: 'red' }}>{error}</Text>
